@@ -1,6 +1,7 @@
 from tkinter import *
 root = Tk()
 
+
 def logAscent():
     running = eFive.get()
     eFive.delete(0, END)
@@ -24,7 +25,11 @@ def logAscent():
     eTwo.delete(0,END)
     eThree.delete(0,END)
     eFour.delete(0,END)
-    
+
+def goTo():
+    top = Toplevel()
+    lbl = Label(top, text="whoop ditty scoop").pack()
+    btn = Button(top, text="close window", command=top.destroy).pack()
 
 
 
@@ -38,7 +43,7 @@ eThree = Entry(root)
 lFour = Label(root, text="Number of moves: ")
 eFour = Entry(root)
 bOne = Button(root,text="Log ascent", command=logAscent)
-bTwo = Button(root,text="show my day!")
+bTwo = Button(root,text="show my day!", command=goTo)
 my_Label = Label(root, text="RuNnInG ToTaLs")
 lFive = Label(root, text="v-points:")
 eFive = Entry(root)
@@ -71,7 +76,6 @@ eSix.pack()
 lSeven.pack()
 eSeven.pack()
 bTwo.pack()
-
 
 
 
