@@ -28,7 +28,7 @@ def logAscent():
 
 def goTo():
     top = Toplevel()
-    lbl = Label(top, text="whoop ditty scoop").pack()
+    lbl = Label(top, text="Stats shown here!").pack()
     btn = Button(top, text="close window", command=top.destroy).pack()
 
 
